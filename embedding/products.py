@@ -6,7 +6,7 @@ import os
 from qdrant_client.models import VectorParams, Distance, PointStruct
 
 load_dotenv()
-model = SentenceTransformer('all-MiniLM-L6-v2')  # Lightweight and efficient model
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')  
 client = QdrantClient(url=os.getenv('QDRANT_URL'), api_key=os.getenv('QDRANT_API_KEY'))
 PRODUCT_COLLECTION_NAME="product_test"
 file_path = 'products.json'
@@ -16,7 +16,7 @@ def save_products():
         data = json.load(file)
 
     for product in data:
-        product_text = f"{product['title']} {product['description']} {product['category']}"
+        product_text = f"{product['title']}, {product['description']}, {product['category']}"
         product['vector'] = model.encode(product_text)
 
     if not client.collection_exists(PRODUCT_COLLECTION_NAME):
@@ -39,4 +39,14 @@ def save_products():
     print("products saved in qdrant successfully")
 
 
-save_products()
+def search_products(query):
+    query_vector = model.encode(query)
+    hits = client.search(
+        collection_name=PRODUCT_COLLECTION_NAME,
+        query_vector=query_vector,
+        limit=1,        
+    )
+    return hits
+
+# save_products()
+print(search_products("rouge à lèvre"))
