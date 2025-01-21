@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john.doe@example.com",
+    "purchased_product_ids": [2, 9],
+    "clicked_product_ids": [2, 9, 4, 6, 10, 24, 21],
+    "added_to_cart_product_ids": [2, 9, 10, 24]
+  },
+  {
+    "id": 2,
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "email": "jane.smith@example.com",
+    "purchased_product_ids": [7, 3],
+    "clicked_product_ids": [7, 3, 10, 11],
+    "added_to_cart_product_ids": [7, 3]
+  },
+  {
+    "id": 3,
+    "firstname": "Michael",
+    "lastname": "Johnson",
+    "email": "michael.johnson@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 4,
+    "firstname": "Emily",
+    "lastname": "Davis",
+    "email": "emily.davis@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 5,
+    "firstname": "William",
+    "lastname": "Brown",
+    "email": "william.brown@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 6,
+    "firstname": "Sophia",
+    "lastname": "Wilson",
+    "email": "sophia.wilson@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 7,
+    "firstname": "James",
+    "lastname": "Taylor",
+    "email": "james.taylor@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 8,
+    "firstname": "Isabella",
+    "lastname": "Anderson",
+    "email": "isabella.anderson@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 9,
+    "firstname": "Liam",
+    "lastname": "Moore",
+    "email": "liam.moore@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  },
+  {
+    "id": 10,
+    "firstname": "Charlotte",
+    "lastname": "Jackson",
+    "email": "charlotte.jackson@example.com",
+    "purchased_product_ids": [],
+    "clicked_product_ids": [],
+    "added_to_cart_product_ids": []
+  }
+]

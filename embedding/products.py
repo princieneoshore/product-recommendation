@@ -49,4 +49,4 @@ def search_products(query):
     return hits
 
 # save_products()
-print(search_products("rouge à lèvre"))
+print(search_products("lipstick"))
